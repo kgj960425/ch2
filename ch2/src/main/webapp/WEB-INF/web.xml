@@ -15,6 +15,7 @@
 	</listener>
 
 	<!-- Processes application requests -->
+	<!-- 원격 프로그램 등록 -->
 	<servlet>
 		<servlet-name>appServlet</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -25,6 +26,7 @@
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 		
+	<!-- URL 맵핑 -->
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
