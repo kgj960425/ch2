@@ -10,33 +10,33 @@ public class RequestInfo {
     @RequestMapping("/requestInfo")
     //    public static void main(String[] args) {
     public void main(HttpServletRequest request) {
-        System.out.println("request.getCharacterEncoding()="+request.getCharacterEncoding()); // ¿äÃ» ³»¿ëÀÇ ÀÎÄÚµù
-        System.out.println("request.getContentLength()="+request.getContentLength());  // ¿äÃ» ³»¿ëÀÇ ±æÀÌ. ¾Ë¼ö ¾øÀ» ¶§´Â -1
-        System.out.println("request.getContentType()="+request.getContentType()); // ¿äÃ» ³»¿ëÀÇ Å¸ÀÔ. ¾Ë ¼ö ¾øÀ» ¶§´Â null
+        System.out.println("request.getCharacterEncoding()="+request.getCharacterEncoding()); // ï¿½ï¿½Ã» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Úµï¿½
+        System.out.println("request.getContentLength()="+request.getContentLength());  // ï¿½ï¿½Ã» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. ï¿½Ë¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ -1
+        System.out.println("request.getContentType()="+request.getContentType()); // ï¿½ï¿½Ã» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½. ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ null
 
-        System.out.println("request.getMethod()="+request.getMethod());      // ¿äÃ» ¹æ¹ý
-        System.out.println("request.getProtocol()="+request.getProtocol());  // ÇÁ·ÎÅäÄÝÀÇ Á¾·ù¿Í ¹öÁ¯ HTTP/1.1
-        System.out.println("request.getScheme()="+request.getScheme());      // ÇÁ·ÎÅäÄÝ
+        System.out.println("request.getMethod()="+request.getMethod());      // ï¿½ï¿½Ã» ï¿½ï¿½ï¿½
+        System.out.println("request.getProtocol()="+request.getProtocol());  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ HTTP/1.1
+        System.out.println("request.getScheme()="+request.getScheme());      // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-        System.out.println("request.getServerName()="+request.getServerName()); // ¼­¹ö ÀÌ¸§ ¶Ç´Â ipÁÖ¼Ò
-        System.out.println("request.getServerPort()="+request.getServerPort()); // ¼­¹ö Æ÷Æ®
-        System.out.println("request.getRequestURL()="+request.getRequestURL()); // ¿äÃ» URL
-        System.out.println("request.getRequestURI()="+request.getRequestURI()); // ¿äÃ» URI
+        System.out.println("request.getServerName()="+request.getServerName()); // ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ ï¿½Ç´ï¿½ ipï¿½Ö¼ï¿½
+        System.out.println("request.getServerPort()="+request.getServerPort()); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®
+        System.out.println("request.getRequestURL()="+request.getRequestURL()); // ï¿½ï¿½Ã» URL
+        System.out.println("request.getRequestURI()="+request.getRequestURI()); // ï¿½ï¿½Ã» URI
 
         System.out.println("request.getContextPath()="+request.getContextPath()); // context path
         System.out.println("request.getServletPath()="+request.getServletPath()); // servlet path
-        System.out.println("request.getQueryString()="+request.getQueryString()); // Äõ¸® ½ºÆ®¸µ
+        System.out.println("request.getQueryString()="+request.getQueryString()); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½
 
-        System.out.println("request.getLocalName()="+request.getLocalName()); // ·ÎÄÃ ÀÌ¸§
-        System.out.println("request.getLocalPort()="+request.getLocalPort()); // ·ÎÄÃ Æ÷Æ®
+        System.out.println("request.getLocalName()="+request.getLocalName()); // ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½
+        System.out.println("request.getLocalPort()="+request.getLocalPort()); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®
 
-        System.out.println("request.getRemoteAddr()="+request.getRemoteAddr()); // ¿ø°Ý ipÁÖ¼Ò
-        System.out.println("request.getRemoteHost()="+request.getRemoteHost()); // ¿ø°Ý È£½ºÆ® ¶Ç´Â ipÁÖ¼Ò
-        System.out.println("request.getRemotePort()="+request.getRemotePort()); // ¿ø°Ý Æ÷Æ®
+        System.out.println("request.getRemoteAddr()="+request.getRemoteAddr()); // ï¿½ï¿½ï¿½ï¿½ ipï¿½Ö¼ï¿½
+        System.out.println("request.getRemoteHost()="+request.getRemoteHost()); // ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½Æ® ï¿½Ç´ï¿½ ipï¿½Ö¼ï¿½
+        System.out.println("request.getRemotePort()="+request.getRemotePort()); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ®
     }
 }
 /*
- * [½ÇÇà°á°ú] http://localhost:8080/ch2/requestInfo?year=2021&month=10&day=1
+ * [ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½] http://localhost:8080/ch2/requestInfo?year=2021&month=10&day=1
  * request.getCharacterEncoding()=UTF-8 request.getContentLength()=-1
  * request.getContentType()=null request.getMethod()=GET
  * request.getProtocol()=HTTP/1.1 request.getScheme()=http
@@ -46,7 +46,7 @@ public class RequestInfo {
  * request.getServletPath()=/requestInfo
  * request.getQueryString()=year=2021&month=10&day=1
  * request.getLocalName()=localhost request.getLocalPort()=8080
- * request.getRemoteAddr()=0:0:0:0:0:0:0:1 <--- AWS¿¡ ¹èÆ÷(deploy)ÇÑ ´ÙÀ½¿¡ ½ÇÇàÇÏ¸é, ½ÇÁ¦
- * ipÁÖ¼Ò¸¦ È®ÀÎÇÒ ¼ö ÀÖÀ½. request.getRemoteHost()=0:0:0:0:0:0:0:1 <--- AWS¿¡ ¹èÆ÷(deploy)ÇÑ
- * ´ÙÀ½¿¡ ½ÇÇàÇÏ¸é, ½ÇÁ¦ ipÁÖ¼Ò¸¦ È®ÀÎÇÒ ¼ö ÀÖÀ½. request.getRemotePort()=54855
+ * request.getRemoteAddr()=0:0:0:0:0:0:0:1 <--- AWSï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(deploy)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½, ï¿½ï¿½ï¿½ï¿½
+ * ipï¿½Ö¼Ò¸ï¿½ È®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. request.getRemoteHost()=0:0:0:0:0:0:0:1 <--- AWSï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(deploy)ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½, ï¿½ï¿½ï¿½ï¿½ ipï¿½Ö¼Ò¸ï¿½ È®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. request.getRemotePort()=54855
  */

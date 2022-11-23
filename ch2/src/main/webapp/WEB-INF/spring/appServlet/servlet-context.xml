@@ -16,6 +16,7 @@
 	<resources mapping="/resources/**" location="/resources/" />
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+	<!-- 이 부분이 있기 때문에 우리가 return 해줄때 .jsp와 /WEB-INF/views/를 안붙이고 return 해주고 파일명만 써서 return 해도 화면으로 보내주는것이다. -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
